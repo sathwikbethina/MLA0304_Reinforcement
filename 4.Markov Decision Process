@@ -1,0 +1,11 @@
+states = ["A", "B", "Goal"]
+transitions = {
+"A": ("B", 1),
+"B": ("Goal", 10)
+}
+state = "A"
+while state != "Goal":
+next_state, reward = transitions[state]
+print("Current:", state, "Next:", next_state, "Reward:", reward)
+state = next_state
+print("Goal Reached")

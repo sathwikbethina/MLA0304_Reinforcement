@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+rewards = [1,2,3,2,5]
+plt.plot(rewards)
+plt.xlabel("Episode")
+plt.ylabel("Reward")
+plt.title("Reward Graph")
+plt.show()

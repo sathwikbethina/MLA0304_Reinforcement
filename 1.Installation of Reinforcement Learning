@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import keras
+import gymnasium as gym
+print("NumPy Version:", np.__version__)
+print("TensorFlow Version:", tf.__version__)
+print("Keras Version:", keras.__version__)
+print("Gymnasium Version:", gym.__version__)
+env = gym.make("FrozenLake-v1")
+state, info = env.reset()
+print("Initial State:", state)
+env.close()
+print("Installation Successful")
